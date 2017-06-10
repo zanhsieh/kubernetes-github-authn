@@ -28,7 +28,7 @@ kubectl create -f https://github.com/oursky/kubernetes-github-authn/blob/master/
 Confirm that the authenticator is running:
 
 ```
-kubectl get pod -l k8s-app=github-authn
+kubectl get pod -l k8s-app=github-authn -n kube-system
 ```
 
 Next, configure apiserver to verify bearer token using this authenticator.
