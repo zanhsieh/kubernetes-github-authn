@@ -60,7 +60,7 @@ access to the project `project1`. First of all, we need to define a new role
 called `admin` which can control all resources.
 
 ```
-kubectl create -f https://github.com/oursky/kubernetes-github-authn/blob/master/manifests/admin-cluster-role.yaml
+kubectl create -f https://github.com/zanhsieh/kubernetes-github-authn/blob/master/manifests/admin-cluster-role.yaml
 ```
 
 We need to assign `johndoe` to this `admin` role so that he has control to
